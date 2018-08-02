@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, NavLink, Prompt } from 'react-router-dom';
 import  PostHome  from './postHome';
 import  Post1  from "./post1";
 import  Post2  from "./post2";
@@ -15,6 +15,7 @@ export default class Posts extends React.Component {
     }
     render() {
         let match = this.props.match;
+        console.log(this.props.location.state.type);
         return (
 
              <div>
