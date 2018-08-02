@@ -1,16 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { render } from 'react-dom';
 
-export default props => (
-    <div>
-        <h2>users</h2>
-        <p>Examples can be accessed from the top navigation.</p>
-    </div>
-);
-
-// export default props => (
-//     return (<div>
-//         <h2>users</h2>
-//         <p>Examples can be accessed from the top navigation.</p>
-//     </div>)
-// );
+export default class PostHome extends React.Component {
+    constructor(props){
+        super(props);
+        console.log(props);
+    }
+    render() {
+        return (
+            <div>
+                <h2>PostHome</h2>
+            </div>
+        )
+    }
+}

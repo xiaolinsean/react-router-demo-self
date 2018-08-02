@@ -1,7 +1,12 @@
 import React from 'react';
+import { render } from 'react-dom';
 
-export default props => (
-    <div>
-        <h2>post2</h2>
-    </div>
-);
+export default class Post2 extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>Post2</h2>
+            </div>
+        )
+    }
+}

@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { render } from 'react-dom';
 
-export default props => (
-    <div>
-        <h2>users</h2>
-        <p>Examples can be accessed from the top navigation.</p>
-    </div>
-);
+export default class Users extends React.Component{
+    render(){
+        return(
+            <div>
+                <h2>users</h2>
+                <p>Examples can be accessed from the top navigation.</p>
+            </div>
+        )
+    }
+}
